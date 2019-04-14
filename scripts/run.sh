@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd $(dirname $0)/..
+sh scripts/compile.sh
+#java -cp "build:lib/*" Sokoban 
+#java -cp "build" build/Sokoban
+cd build
+java Sokoban
